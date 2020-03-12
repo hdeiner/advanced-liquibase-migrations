@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+    <changeSet id="V1_1 Create Initial IMBD Schema" author="howarddeiner">
+        <createTable tableName="NAME">
+            <column name="NCONST" type="varchar(31)"/>
+            <column name="PRIMARY_NAME" type="varchar(255)"/>
+            <column name="BIRTH_YEAR" type="int"/>
+            <column name="DEATH_YEAR" type="int"/>
+        </createTable>
+        <createTable tableName="TITLE">
+            <column name="TCONST" type="varchar(31)"/>
+            <column name="TITLE_TYPE" type="varchar(31)"/>
+            <column name="PRIMARY_TITLE" type="varchar(1023)"/>
+            <column name="ORIGINAL_TITLE" type="varchar(1023)"/>
+            <column name="IS_ADULT" type="boolean"/>
+            <column name="START_YEAR" type="int"/>
+            <column name="END_YEAR" type="int"/>
+            <column name="RUNTIME_MINUTES" type="int"/>
+        </createTable>
+        <createTable tableName="NAME_PROFESSION">
+            <column name="NCONST" type="varchar(31)"/>
+            <column name="PROFESSION" type="varchar(31)"/>
+        </createTable>
+        <createTable tableName="NAME_TITLE">
+            <column name="NCONST" type="varchar(31)"/>
+            <column name="TCONST" type="varchar(31)"/>
+        </createTable>
+        <createTable tableName="TITLE_GENRE">
+            <column name="TCONST" type="varchar(31)"/>
+            <column name="GENRE" type="varchar(31)"/>
+        </createTable>
+        <createTable tableName="TITLE_AKA">
+            <column name="TCONST" type="varchar(31)"/>
+            <column name="ORDERING" type="int"/>
+            <column name="TITLE" type="varchar(1023)"/>
+            <column name="REGION" type="varchar(15)"/>
+            <column name="LANGUAGE" type="varchar(63)"/>
+            <column name="TYPES" type="varchar(63)"/>
+            <column name="ATTRIBUTES" type="varchar(63)"/>
+            <column name="IS_ORIGINAL_TITLE" type="boolean"/>
+        </createTable>
+        <createTable tableName="TITLE_DIRECTOR">
+            <column name="TCONST" type="varchar(31)"/>
+            <column name="NCONST" type="varchar(31)"/>
+        </createTable>
+        <createTable tableName="TITLE_WRITER">
+            <column name="TCONST" type="varchar(31)"/>
+            <column name="NCONST" type="varchar(31)"/>
+        </createTable>
+        <createTable tableName="TITLE_EPISODE">
+            <column name="TCONST" type="varchar(31)"/>
+            <column name="TCONST_PARENT" type="varchar(31)"/>
+            <column name="SEASON_NUMBER" type="int"/>
+            <column name="EPISODE_NUMBER" type="int"/>
+        </createTable>
+        <createTable tableName="TITLE_PRINCIPALS">
+            <column name="TCONST" type="varchar(31)"/>
+            <column name="ORDERING" type="int"/>
+            <column name="NCONST" type="varchar(31)"/>
+            <column name="CATEGORY" type="varchar(63)"/>
+            <column name="JOB" type="varchar(255)"/>
+            <column name="CHARACTER_PLAYED" type="varchar(255)"/>
+        </createTable>
+        <createTable tableName="TITLE_RATING">
+            <column name="TCONST" type="varchar(31)"/>
+            <column name="AVERAGE_RATING" type="varchar(15)"/>
+            <column name="NUMBER_OF_VOTES" type="int"/>
+        </createTable>
+    </changeSet>
+
+</databaseChangeLog>
