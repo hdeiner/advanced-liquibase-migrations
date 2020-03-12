@@ -159,26 +159,16 @@ produces
  \__,_|\__,_|\__\__,_|_.__/ \__,_|___/\___| |
                                          /_/ 
 [INFO] Scanning for projects...
-[WARNING] 
-[WARNING] Some problems were encountered while building the effective model for com.deinersoft:advanced-liquibase-migrations:jar:1.0-SNAPSHOT
-[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 53, column 21
-[WARNING] 
-[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
-[WARNING] 
-[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
-[WARNING] 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
 [INFO] Building advanced-liquibase-migrations 1.0-SNAPSHOT
 [INFO] ------------------------------------------------------------------------
 [INFO] 
 [INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ advanced-liquibase-migrations ---
-[WARNING] Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 [INFO] Copying 7 resources
 [INFO] 
 [INFO] --- maven-compiler-plugin:3.2:compile (default-compile) @ advanced-liquibase-migrations ---
 [INFO] Changes detected - recompiling the module!
-[WARNING] File encoding has not been set, using platform encoding UTF-8, i.e. build is platform dependent!
 [INFO] Compiling 10 source files to /home/howarddeiner/IdeaProjects/advanced-liquibase-migrations/target/classes
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
@@ -195,14 +185,6 @@ produces
           |_|                                  |___|   \_\                                                 /_/ 
 /home/howarddeiner/IdeaProjects/advanced-liquibase-migrations
 [INFO] Scanning for projects...
-[WARNING] 
-[WARNING] Some problems were encountered while building the effective model for com.deinersoft:advanced-liquibase-migrations:jar:1.0-SNAPSHOT
-[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 53, column 21
-[WARNING] 
-[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
-[WARNING] 
-[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
-[WARNING] 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
 [INFO] Building advanced-liquibase-migrations 1.0-SNAPSHOT
@@ -270,14 +252,6 @@ produces
           |_|                                  |___|     \_\                                                                /_/ 
 /home/howarddeiner/IdeaProjects/advanced-liquibase-migrations
 [INFO] Scanning for projects...
-[WARNING] 
-[WARNING] Some problems were encountered while building the effective model for com.deinersoft:advanced-liquibase-migrations:jar:1.0-SNAPSHOT
-[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 53, column 21
-[WARNING] 
-[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
-[WARNING] 
-[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
-[WARNING] 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
 [INFO] Building advanced-liquibase-migrations 1.0-SNAPSHOT
@@ -510,14 +484,6 @@ produces
           |_|                                    |___|   \_\                                                                                      /_/ 
 /home/howarddeiner/IdeaProjects/advanced-liquibase-migrations
 [INFO] Scanning for projects...
-[WARNING] 
-[WARNING] Some problems were encountered while building the effective model for com.deinersoft:advanced-liquibase-migrations:jar:1.0-SNAPSHOT
-[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 53, column 21
-[WARNING] 
-[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
-[WARNING] 
-[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
-[WARNING] 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
 [INFO] Building advanced-liquibase-migrations 1.0-SNAPSHOT
@@ -565,14 +531,6 @@ produces
                                                                        /_/ 
 /home/howarddeiner/IdeaProjects/advanced-liquibase-migrations
 [INFO] Scanning for projects...
-[WARNING] 
-[WARNING] Some problems were encountered while building the effective model for com.deinersoft:advanced-liquibase-migrations:jar:1.0-SNAPSHOT
-[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 53, column 21
-[WARNING] 
-[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
-[WARNING] 
-[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
-[WARNING] 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
 [INFO] Building advanced-liquibase-migrations 1.0-SNAPSHOT
@@ -615,14 +573,6 @@ splitting PRIMARY_NAME - 6234 total lines (60 SECOND REPORTING INTERVAL)
           |_|                                    |___|     \_\                          |_|                        |__/___|                 /_/ 
 /home/howarddeiner/IdeaProjects/advanced-liquibase-migrations
 [INFO] Scanning for projects...
-[WARNING] 
-[WARNING] Some problems were encountered while building the effective model for com.deinersoft:advanced-liquibase-migrations:jar:1.0-SNAPSHOT
-[WARNING] 'build.plugins.plugin.version' for org.apache.maven.plugins:maven-compiler-plugin is missing. @ line 53, column 21
-[WARNING] 
-[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
-[WARNING] 
-[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
-[WARNING] 
 [INFO]                                                                         
 [INFO] ------------------------------------------------------------------------
 [INFO] Building advanced-liquibase-migrations 1.0-SNAPSHOT
