@@ -10,7 +10,9 @@ We need to start treating our databases like code.
 - Pets vs cattle analogy.  Would you treat your code like a pet and painstakingly patch each byte that changes from release to release hoping that everything still works, or want to be able to build, test, and then deploy it confidently from source using a version controlled repository?
 - DevOps culture embraces the team as a whole creating outcomes, rather than exhaustive estimating, managing cross silo dependencies, and tracking work progress in what (by other names) is nothing different than a project plan.
 
-This project demonstrates the use of an open source tool called FlyWay to help us create and migrate databases through their development and growth.  But what this project also demonstrates is that where SQL alone is inadequate to express a mrigration from version N to version N+1, we can use some of the more advanced features of FlyWay (such as a JDBC based migration instead if the usual SQL based migration).  In other words, this project shows how both Schema Migration and Data Migration can work together in a repository based manner with automated testing used to validate all of the actions.
+This project demonstrates the use of an open source tool called Liquibase to help us create and migrate databases through their development and growth.  But what this project also demonstrates is that where SQL alone is inadequate to express a mrigration from version N to version N+1, we can use some of the more advanced features of Liquibase (such as a JDBC based migration instead if the usual SQL based migration).  In other words, this project shows how both Schema Migration and Data Migration can work together in a repository based manner with automated testing used to validate all of the actions.
+
+When comparing FlyWay to Liquibase, one thing that distinguishes the two is the theoretical foundation of Liquibase.  It is the realization of the 2006 book by Ambler and Sadalage titled "Refactoring Databases: Evolutionary Database Design."  I consider Liquibase to be the first DevOps tool (way before the name became coined!), writtten by Nathan Voxland around the time that the book was first being read in the community.  Nathan sold Liquibase to Datical several years ago, but both he and the Datical company continue to exhance and support the tool to this day.
 
 We will start with a database used by IMDB.  We will go through the following migrations:
 
@@ -433,7 +435,7 @@ The script is a little tedious in showing everything going on in deep detail.
 
 Reading along, the script first compiles all of the Java code, invokes a script to get rid of 90% of the data to import (to make the import time more bearable).
 
-Because of the way that Liquibase is a much more rigorous tool in keeping with the idea of developing on trunk in a version controlled repository fashion, I had to fashion the dbchangelog.xml to allow us to see the effects of migrating from one database version to another, all within the confines of one project.  I did this by breaking out the versions of the database migration state in the same way that I did these migrations using Flyway, and then writing a small Python script to allow me to comment out migrations that are beyond the migration state version that I want to stop at.
+Because of the way that Liquibase is a much more rigorous tool in keeping with the idea of developing on trunk in a version controlled repository fashion, I had to fashion the dbchangelog.xml to allow us to see the effects of migrating from one database version to another, all within the confines of one project.  I did this by breaking out the versions of the database migration state in the same way that I did these migrations using Liquibase, and then writing a small Python script to allow me to comment out migrations that are beyond the migration state version that I want to stop at.
 
 The script calls on the manage_dbchangelog.py script and calls on Liquibase to migrates to version 1_1 and then 1_2.
 
@@ -777,7 +779,7 @@ produces
                                                              
 Stopping mysql ... done
 Removing mysql ... done
-Removing network advanced-flyway-migrations_default
+Removing network advanced-liquibase-migrations_default
 
 ```
 
