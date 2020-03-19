@@ -19,6 +19,7 @@ cd src/main/resources/db/migration
 python3 manage_dbchangelog.py -i dbchangelog.xml -v V1_2
 cd -
 mvn liquibase:update
+mvn liquibase:dbDoc
 
 cd src/test/python
 behave -v features/step_2_tests.feature
